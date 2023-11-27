@@ -16,7 +16,7 @@
         <div class="col-lg-5 col-12">
             <div id="auth-left">
                 <a href="{{url('/')}}"><img src="{{asset('admin/assets/images/logo/hexa-logo.png')}}" alt="Logo"></a>
-                <h1 class="auth-title">Admin Login.</h1>
+                <h1 class="auth-title">Login</h1>
                 <form action="{{route('login')}}" method="POST">
                     @csrf
                     <div class="form-group position-relative has-icon-left mb-4">
