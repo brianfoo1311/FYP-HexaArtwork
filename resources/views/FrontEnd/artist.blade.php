@@ -5,7 +5,7 @@
             <div class="row port_1 text-center">
                 <div class="col-md-12">
                     <h1 class="font_60">Artist</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</p>
+                    <p>A selection of trending artists you don't want to miss.</p>
                     <span class="icon_line col_pink"><i class="fa fa-square-o"></i></span>
                 </div>
             </div>

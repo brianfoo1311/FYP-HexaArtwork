@@ -123,9 +123,9 @@
         }
     </script>
 
-    <script>
+    <!-- <script>
         function submitForm() {
             $('#priceFilterForm').submit();
         }
-    </script>
+    </script> -->
 @endsection

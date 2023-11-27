@@ -74,7 +74,7 @@
             <div class="row port_1 text-center">
                 <div class="col-md-12">
                     <h1 class="font_60">Gallery</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</p>
+                    <p>Find the nearest gallery around you.</p>
                     <span class="icon_line col_pink"><i class="fa fa-square-o"></i></span>
                 </div>
             </div>
@@ -166,7 +166,7 @@
             <div class="row port_1 text-center mb-4">
                 <div class="col-md-12">
                     <h1 class="font_60">BLOG</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</p>
+                    <p>Company, product, and people news</p>
                     <span class="icon_line col_pink"><i class="fa fa-square-o"></i></span>
                 </div>
             </div>
@@ -331,7 +331,7 @@
             <div class="row port_1 text-center mb-4">
                 <div class="col-md-12">
                     <h1 class="font_60">ABOUT US</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</p>
+                    <p>Hexa Artwork is for Art Collecting</p>
                     <span class="icon_line col_pink"><i class="fa fa-square-o"></i></span>
                 </div>
             </div>
@@ -348,14 +348,17 @@
                 <div class="col-md-6">
                     <div class="about_h1r">
                         <h1>A LITTLE INTRO</h1>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-                            voluptate velit esse cillum dolore</p>
+                        <p>As the leading marketplace for art by the world’s emerging and established artists, 
+                            we’ve made it easy for new and experienced collectors to discover, buy, and sell art—and so much more. 
+                            Everything you’ll ever need to collect art, you’ll find on Hexa Artwork.</p>
                         <h1 class="mt-4">MY EXHIBITIONS</h1>
-                        <p>Sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                            magna aliqua. Ut enim ad minim veniam, Lorem ipsum dolor quis nostrud exercitation
-                            ullamco</p>
+                        <p>Explore the artists' statements, delving into the inspiration and creative processes that breathe life into each piece. 
+                            Themes and concepts weave a narrative, while curatorial insights shed light on the selection process. 
+                            Meet the featured artists, discover their journeys, and connect with the stories behind the brushstrokes. 
+                            Engage with interactive elements and, if applicable, join us for events or virtual experiences. 
+                            Each artwork is accompanied by evocative descriptions, offering a glimpse into the artist's world. 
+                            Don't miss limited editions or exclusive pieces. We invite you to not just view but experience art. 
+                            Dive in, explore, and perhaps, make one of these unique creations your own.</p>
                         </span>
                     </div>
                 </div>

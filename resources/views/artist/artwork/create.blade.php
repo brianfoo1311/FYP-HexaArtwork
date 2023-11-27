@@ -40,7 +40,7 @@
                                             <div class="form-group">
                                                 <label class="form-label">Price:</label>
                                                 <input type="number" class="form-control" name="price"
-                                                       placeholder="price" required>
+                                                       placeholder="Price" required>
                                             </div>
                                         </div>
 
