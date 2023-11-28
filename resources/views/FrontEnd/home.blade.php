@@ -88,7 +88,7 @@
                     <div class="tab-pane active" id="home">
                         <div class="folio_1i row">
                             @forelse($galleries as $gallery)
-                                <div class="col-md-3">
+                                <div class="col-md-3 mb-4">
                                     <div class="folio_main clearfix">
                                         <div class="folio_1im position-relative clearfix">
                                             <div class="folio_1im1 clearfix">
