@@ -21,7 +21,7 @@ Make sure you have the following installed on your system:
  - Composer
  - VS code (Code editor)
 
-Note: While installation of composer make ysure you uselect php8.1 version.
+Note: While installation of composer make sure you select php8.1 version.
 It’ll ask while installation.
 
 
@@ -30,7 +30,7 @@ It’ll ask while installation.
 Open a terminal and run the following command to clone the repository:
 
 
-git clone https://github.com/your-username/your-laravel-project.git
+git clone https://github.com/brianfoo1311/FYP-HexaArtwork.git
 
 Navigate to the project directory:
 
