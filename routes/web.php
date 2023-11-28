@@ -65,6 +65,8 @@ Route::group(['namespace' => 'Admin', 'middleware' => 'admin', 'prefix' => 'admi
     Route::get('artwork/list', [\App\Http\Controllers\Admin\MainController::class, 'artworkList'])->name('admin.artworkList');
     Route::post('artwork/update/status', [\App\Http\Controllers\Admin\MainController::class, 'artworkUpdateStatus'])->name('admin.artwork.update.status');
 
+    //Users
+    Route::get('user/list', [\App\Http\Controllers\Admin\MainController::class, 'userList'])->name('admin.userList');
 
     //Order
     Route::get('order/list', [\App\Http\Controllers\Admin\MainController::class, 'orderList'])->name('admin.orderList');

@@ -46,8 +46,8 @@
                                 </form>
                             </div>
                             <div class="col-6">
-                                <form id="priceFilterForm" action="{{ route('artwork') }}" method="GET">
-                                    <select name="price" class="form-select bg_gray col_light" required="">
+                                <form id="filterForm2" action="{{ route('artwork') }}" method="GET">
+                                    <select name="price" class="form-select bg_gray col_light" required="" onchange="submitForm2()">
                                         <option value="">Price</option>
                                         <option value="100-500" {{ request('price') == '100-500' ? 'selected' : '' }}>
                                             100-500
@@ -121,11 +121,9 @@
         function submitForm() {
             $('#filterForm').submit();
         }
-    </script>
 
-    <!-- <script>
-        function submitForm() {
-            $('#priceFilterForm').submit();
+        function submitForm2() {
+            $('#filterForm2').submit();
         }
-    </script> -->
+    </script>
 @endsection

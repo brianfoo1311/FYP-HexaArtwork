@@ -10,12 +10,13 @@ use App\Models\OrderProduct;
 use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\DB;
 
 class MainController extends Controller
 {
     public function home()
     {
-        $galleries = Gallery::orderBy('id', 'desc')->paginate(9);
+        $galleries = Gallery::orderBy('id', 'desc')->take(12)->get();
 
         return view('FrontEnd.home', compact('galleries'));
 
@@ -83,12 +84,13 @@ class MainController extends Controller
 
         // Filter by price range
         if ($request->filled('price')) {
-            $priceRange = explode('-', $request->input('price'));
+            $priceRange = array_map('trim', explode('-', $request->input('price')));
             if ($priceRange[1] == '') {
                 // Handle "Above 2000" case
-                $query->where('price', '>=', $priceRange[0]);
+                $query->where(DB::raw('CAST(price AS UNSIGNED)'), '>=', $priceRange[0]);
+
             } else {
-                $query->whereBetween('price', [$priceRange[0], $priceRange[1]]);
+                $query->whereBetween(DB::raw('CAST(price AS UNSIGNED)'), [$priceRange[0], $priceRange[1]]);
             }
         }
 

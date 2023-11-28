@@ -13,12 +13,11 @@ class MainController extends Controller
 {
     public function dashboard()
     {
-        $users = User::where('role_id', User::USER_ROLE_ID)->count();
-        $artists = User::where('role_id', User::ARTIST_ROLE_ID)->count();
+        $users = User::whereIn('role_id', [2, 3])->count();
         $orders = Order::count();
         $artworks = Artwork::count();
 
-        return view('admin.dashboard', compact('users', 'artists', 'artworks', 'orders'));
+        return view('admin.dashboard', compact('users', 'artworks', 'orders'));
     }
 
     public function artworkList()
@@ -51,19 +50,6 @@ class MainController extends Controller
     {
         $orders = Order::paginate(10);
 
-//        $orderProducts = [];
-//        foreach ($orders as $order) {
-//            $orderProduct = OrderProduct::find($order->id);
-//            if ($orderProduct) {
-//                $orderProducts[] = [
-//                    'order_id' => $orderProduct->id,
-//                    'product_title' => $orderProduct->product_title,
-//                    'product_quantity' => $orderProduct->product_quantity
-//                ];
-//            }
-//
-//        }
-
         return view('admin.order.list', compact('orders'));
     }
 
@@ -76,6 +62,16 @@ class MainController extends Controller
         }
 
         return redirect()->back()->with('success', 'Status Updated Successfully');
+    }
+
+    public function userList(Request $request)
+    {
+        $roleFilter = $request->input('role');
+
+        // Use paginate() for pagination
+        $users = ($roleFilter) ? User::where('role_id', $roleFilter)->paginate(10) : User::paginate(10);
+
+        return view('admin.user.list', compact('users'));
     }
 
 }

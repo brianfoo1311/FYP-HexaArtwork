@@ -97,7 +97,7 @@
                                                         src="{{ asset('storage/images/galleries/' . $gallery->image) }}"
                                                         data-bs-target="#exampleModal{{ $gallery->id }}"
                                                         data-bs-toggle="modal"
-                                                        style="height: {{ rand(200, 400) }}px; width: auto;"
+                                                        class="w-100"
                                                         alt="{{ $gallery->name }}">
                                                 </a>
                                             </div>
@@ -136,7 +136,7 @@
                                                     <div class="modal-body">
                                                         <h6 class="text-black">Location: {{ $gallery->location }}</h6>
                                                         <p class="text-black">
-                                                            Description:{{ $gallery->description }}</p>
+                                                            Description: {{ $gallery->description }}</p>
                                                     </div>
                                                     <div class="modal-footer">
                                                         <button type="button" class="btn btn-secondary"
@@ -349,8 +349,8 @@
                     <div class="about_h1r">
                         <h1>A LITTLE INTRO</h1>
                         <p>As the leading marketplace for art by the world’s emerging and established artists, 
-                            we’ve made it easy for new and experienced collectors to discover, buy, and sell art—and so much more. 
-                            Everything you’ll ever need to collect art, you’ll find on Hexa Artwork.</p>
+                            we’ve made it easy for new and experienced collectors to discover, buy, 
+                            and sell art—and so much more. Everything you’ll ever need to collect art, you’ll find on Hexa Artwork.</p>
                         <h1 class="mt-4">MY EXHIBITIONS</h1>
                         <p>Explore the artists' statements, delving into the inspiration and creative processes that breathe life into each piece. 
                             Themes and concepts weave a narrative, while curatorial insights shed light on the selection process. 

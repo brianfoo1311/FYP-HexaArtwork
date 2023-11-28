@@ -50,7 +50,7 @@
                                                         src="{{ asset('storage/images/galleries/' . $gallery->image) }}"
                                                         data-bs-target="#exampleModal{{ $gallery->id }}"
                                                         data-bs-toggle="modal"
-                                                        style="height: {{ rand(200, 400) }}px; width: auto;"
+                                                        class="w-100"
                                                         alt="{{ $gallery->name }}">
                                                 </a>
                                             </div>
