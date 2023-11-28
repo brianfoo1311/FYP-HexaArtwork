@@ -7,6 +7,79 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 
+# Hexa Artwork
+
+Welcome to the documentation for Hexa Artwork! Follow the steps below to clone and set up the project on your local machine.
+
+### Prerequisites
+
+Make sure you have the following installed on your system:
+
+#### For windows:
+
+ - WampServer
+ - Composer
+ - VS code (Code editor)
+
+Note: While installation of composer make ysure you uselect php8.1 version.
+It’ll ask while installation.
+
+
+### Clone the Repository
+
+Open a terminal and run the following command to clone the repository:
+
+
+git clone https://github.com/your-username/your-laravel-project.git
+
+Navigate to the project directory:
+
+cd your-laravel-project
+
+### Install Dependencies
+
+Run the following command to install Laravel dependencies using Composer:
+
+composer install
+
+### Set Up Environment Variables
+
+Duplicate the .env.example file and save it as .env. Update the database and other configuration settings in the .env file:
+
+cp .env.example .env
+
+### Generate Application Key
+
+Generate the application key with the following command:
+
+php artisan key:generate
+
+### Database Migration
+
+Run the database migrations to create tables:
+
+php artisan migrate:fresh –seed
+
+### Serve the Application
+
+To start the development server, run:
+
+php artisan serve
+
+Visit http://localhost:8000 in your browser to see your Laravel application.
+
+### Additional Configuration
+
+Storage Link: If your project involves file uploads, create a symbolic link to the storage folder:
+
+php artisan storage:link
+
+Now you're ready to go.........................
+
+
+
+
+
 ## About Laravel
 
 Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
